@@ -1,0 +1,666 @@
+@font-face {
+  font-family: Eraser;
+  src: url(font/Eraser/EraserRegular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  background-color: #ffffff;
+
+  padding: 0px;
+  margin: 0px;
+}
+
+/* ----------- Header ---------------*/
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 9999;
+  background-image: linear-gradient(
+    to left,
+    #f5f360,
+    #ece523,
+    #e8c219,
+    #de9604,
+    #ca610e
+  );
+  background-size: 500% 100%;
+  animation: anima-gradient 5s infinite alternate;
+}
+
+@keyframes anima-gradient {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+/* ----------------- Header img -------------*/
+header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-left: 40px;
+  box-shadow: 1px 1px 2px 1px #b6b6b6;
+}
+
+/* ------------------- Header ul ----------------*/
+header ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 50px;
+  list-style: none;
+}
+header .logo {
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.logo:hover {
+  font-family: Eraser;
+  color: white;
+}
+
+/*--------------------- Navebar ul li a -----------*/
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px #5e5e5e;
+  transition: all 0.3s;
+
+  cursor: pointer;
+}
+
+/*---------------------- Navebar ul li a hover -------*/
+.navbar ul li a:hover {
+  font-family: Eraser;
+  color: white;
+}
+
+/*--------------------- Primeira Section -------------*/
+.section-1 {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background-color: #ece523;*/
+  background-image: url(/img/quadro.png);
+
+  border-left: 5px solid #26201a;
+  border-right: 5px solid #463b2e;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-left: 60px;
+  border-radius: 20px;
+  z-index: 10;
+}
+/*------------ card-1 -----------------*/
+.card-1 {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+}
+/* -------------- img card-1 -------------*/
+.imag {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+/* ---------------- card-1 nome-da-cerveja h1 ---------*/
+.card-1 .nomeCerveja {
+  color: #ecded9;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 10px;
+  font-family: Eraser;
+  font-size: 16px;
+  font-weight: 100;
+}
+/* ---------------- Overlay ------------*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e8c219;
+  border-radius: 20px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+/* ------------- card-1 hover ---------------*/
+.card-1:hover .overlay {
+  opacity: 1;
+  border: 10px solid #ffffff;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1);
+  transform: rotateZ(-360deg) scale(1);
+}
+/* --------------------- Texto card-1 ---------*/
+.text-card-1 {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text-card-1 h1 {
+  margin-top: -150px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  font-size: 19px;
+  font-weight: 600;
+}
+.text-card-1 p {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+  line-height: 21px;
+  margin-left: -20px;
+}
+/*------------------Card-2 ---------------------------*/
+.card-2 {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.imag {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card-2 .nomeCerveja {
+  color: #ecded9;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 10px;
+  font-family: Eraser;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e8c219;
+  border-radius: 20px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.card-2:hover .overlay {
+  opacity: 1;
+  border: 10px solid #ffffff;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1);
+  transform: rotateZ(-360deg) scale(1);
+}
+
+.text-card-2 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text-card-2 h1 {
+  margin-top: 50px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+.text-card-2 .lager {
+  margin-top: 25px;
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+  line-height: 20px;
+
+  margin-bottom: -30px;
+}
+/*------------------ card-3 --------------*/
+.card-3 {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+}
+
+.imag {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.card-3 .nomeCerveja {
+  color: #ecded9;
+  text-align: center;
+  margin-left: -50px;
+  margin-top: 10px;
+  font-family: Eraser;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  width: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e8c219;
+  border-radius: 20px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+
+.card-3:hover .overlay {
+  opacity: 1;
+  border: 10px solid #ffffff;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1);
+  transform: rotateZ(-360deg) scale(1);
+}
+
+.text-card-3 {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text-card-3 h1 {
+  margin-top: 30px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+/*-------------------- Segunda section ----------------*/
+.section-2 {
+  width: 90%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ca610e;
+  margin-top: 100px;
+  margin-left: 60px;
+  border-radius: 20px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  background-image: url(img/quadro.png);
+  background-size: auto;
+
+  border-left: 5px solid #26201a;
+  border-right: 5px solid #463b2e;
+  background-repeat: no-repeat;
+  margin-top: 150px;
+  margin-left: 60px;
+  border-radius: 20px;
+  z-index: 2;
+}
+/*------------------------- Cards -------------------*/
+.cards {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+}
+/*--------------------------imgs-cards ------------------*/
+.imgs-cards {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+/*------------------------- Overlay-cards ---------------------*/
+.overlay-cards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ece523;
+  overflow: hidden;
+  width: 350px;
+  height: 355px;
+  transform: scale(0);
+  transition: 0.3s ease;
+  border-radius: 20px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+/*-------------------------- Cards hover -------------------*/
+.cards:hover .overlay-cards {
+  transform: scale(1);
+}
+/*--------------------------- textos cards ----------------*/
+.text-cards {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cards .nomeCerveja {
+  margin-bottom: -15px;
+  font-family: Eraser;
+  color: white;
+  margin-left: 5px;
+}
+
+.cards-1 {
+  position: relative;
+  width: 50%;
+}
+/*--------------------------imgs-cards ------------------*/
+.imgs-cards {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+/*------------------------- Overlay-cards ---------------------*/
+.overlay-cards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ece523;
+  overflow: hidden;
+  width: 350px;
+  height: 355px;
+  transform: scale(0);
+  transition: 0.3s ease;
+  border-radius: 20px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+/*-------------------------- Cards hover -------------------*/
+.cards-1:hover .overlay-cards {
+  transform: scale(1);
+}
+/*--------------------------- textos cards ----------------*/
+.text-cards {
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cards-1 .nomeCerveja {
+  margin-bottom: -15px;
+  font-family: Eraser;
+  color: white;
+  margin-left: 50px;
+}
+.cards-2 {
+  position: relative;
+  width: 50%;
+}
+/*--------------------------imgs-cards ------------------*/
+.imgs-cards {
+  margin-top: 20px;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+/*------------------------- Overlay-cards ---------------------*/
+.overlay-cards {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ece523;
+  overflow: hidden;
+  width: 350px;
+  height: 355px;
+  transform: scale(0);
+  transition: 0.3s ease;
+  border-radius: 20px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+/*-------------------------- Cards hover -------------------*/
+.cards-2:hover .overlay-cards {
+  transform: scale(1);
+}
+/*--------------------------- textos cards ----------------*/
+.text-cards {
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.cards-2 .nomeCerveja {
+  margin-bottom: -15px;
+  font-family: Eraser;
+  color: white;
+  margin-left: 50px;
+}
+/*---------------------- Fim dos cards cervejas ---------------------*/
+
+/*----------------------- Posts --------------------------------*/
+.section-3 {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fffefe;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.slide-container {
+  max-width: 1080px;
+  width: 30%;
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.slide-content {
+  margin: 0 40px;
+}
+.card0 {
+  height: 300px;
+  border-radius: 25px;
+  background-color: #333;
+}
+.image-content,
+.card-content {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay-s {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #de9604;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay-s::before,
+.overlay-s::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #de9604;
+}
+.overlay-s::after {
+  border-radius: 0 25px 0 0;
+  background-color: #333;
+}
+.card-image {
+  position: relative;
+  margin-left: -200px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+.name {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.descricao {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 15px;
+  margin-left: -20px;
+}
+.comentou {
+  color: #ffffff;
+  margin-left: -100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/*-----------------------footer-----------------------*/
+.social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 6.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.social ul {
+  margin-top: 40px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+.social ul li {
+  display: inline-block;
+}
+.social i {
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.5s;
+  cursor: pointer;
+}
+.fa-facebook-square:hover,
+.fa-twitter-square:hover,
+.fa-instagram:hover,
+.fa-google-plus-square:hover {
+  color: #ca610e;
+}
+
+/*------------------------Animação imagens ------------*/
+.animaImg img {
+  width: 50px;
+  animation: garrafas 10s linear infinite;
+  z-index: -1;
+}
+.animaImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -900px;
+}
+@keyframes garrafas {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300vh);
+    opacity: 0;
+  }
+}
+.animaImg img:nth-child(1) {
+  animation-delay: 2s;
+}
+.animaImg img:nth-child(2) {
+  animation-delay: 1s;
+}
+.animaImg img:nth-child(3) {
+  animation-delay: 3s;
+}
+.animaImg img:nth-child(4) {
+  animation-delay: 4.5s;
+}
+.animaImg img:nth-child(5) {
+  animation-delay: 3.2s;
+}
+.animaImg img:nth-child(6) {
+  animation-delay: 6s;
+}
+.animaImg img:nth-child(7) {
+  animation-delay: 4.7s;
+}
